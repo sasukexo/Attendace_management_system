@@ -156,7 +156,7 @@ def manually_fill():
             def create_csv():
                 import csv
                 cursor.execute("select * from " + DB_table_name + ";")
-                csv_name='C:/Users/kusha/PycharmProjects/Attendace managemnt system/Attendance/Manually Attendance/'+DB_table_name+'.csv'
+                csv_name='C:\\Users\\aswin\\OneDrive\\Desktop\\ml\\Attendace_management_system\\Attendance\\Manually Attendance\\OOP_2019_02_22_Time_11_32_41.csv'
                 with open(csv_name, "w") as csv_file:
                     csv_writer = csv.writer(csv_file)
                     csv_writer.writerow([i[0] for i in cursor.description])  # write headers
